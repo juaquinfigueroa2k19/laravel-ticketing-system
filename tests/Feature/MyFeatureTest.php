@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use Database\Factories\TransactionFactory;
@@ -10,7 +9,6 @@ use Database\Factories\TransactionFactory;
 class MyFeatureTest extends TestCase
 {
     use WithFaker;
-    use RefreshDatabase;
 
     public function test_it_add_the_transactions()
     {

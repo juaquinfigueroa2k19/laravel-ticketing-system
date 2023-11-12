@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
 use Mockery;
@@ -12,7 +11,6 @@ class MyUnitTest extends TestCase
 {
     
     use WithFaker;
-    use RefreshDatabase;
 
     public function test_unit_transactions()
     {
