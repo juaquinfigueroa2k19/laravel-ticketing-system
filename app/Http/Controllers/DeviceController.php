@@ -68,7 +68,7 @@ class DeviceController extends Controller
 
     public function fetchget(Request $request)
     {
-        $transactions = Transaction::with('tickets.bets')->paginate(3);
+        $transactions = Transaction::with('tickets.bets')->paginate(2);
 
         return View::make('pages.response')->with('transactions', $transactions);
     }
